@@ -1,8 +1,8 @@
+import interfaces.getProto;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
 
-public class Human {
+public class Human{
     private static int defaultIndex;
 
     static {
@@ -56,6 +56,8 @@ public class Human {
                 ", Birthdate: " + birthdate +
                 '}';
     }
+
+
 }
 
 

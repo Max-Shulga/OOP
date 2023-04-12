@@ -1,7 +1,10 @@
+import interfaces.getProto;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Man  extends Human{
+public class Man  extends Human implements getProto {
+    Relations relations = new Relations(this);
 
     private static int defaultIndex;
     static {
@@ -9,6 +12,8 @@ public class Man  extends Human{
     }
     public int power;
     ArrayList<String> inheritance;
+
+
 
     public Man(String firstName, int age) {
         super(firstName, age);
@@ -38,4 +43,8 @@ public class Man  extends Human{
     }
 
 
+    @Override
+    public Object getProto() {
+        return this;
+    }
 }
