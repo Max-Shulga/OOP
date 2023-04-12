@@ -45,19 +45,10 @@ public class Human{
         cupboard.openCupboard();
     }
 
-
-
     @Override
     public String toString() {
-        return "Human{" +
-                "First name: '" + firstName + '\'' +
-                ", second name: '" + secondName + '\'' +
-                ", Age: " + age +
-                ", Birthdate: " + birthdate +
-                '}';
+        return firstName + ' ' + secondName  + ", age: " + age;
     }
-
-
 }
 
 

@@ -3,8 +3,8 @@ import interfaces.getProto;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Man  extends Human implements getProto {
-    Relations relations = new Relations(this);
+public class Man  extends Human implements getProto{
+    Relations relations = new Relations(getProto());
 
     private static int defaultIndex;
     static {
@@ -44,7 +44,9 @@ public class Man  extends Human implements getProto {
 
 
     @Override
-    public Object getProto() {
+    public Man getProto() {
         return this;
     }
+
+
 }
