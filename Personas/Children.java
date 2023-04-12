@@ -1,6 +1,6 @@
-import interfaces.getProto;
+package Personas;
 
-public class Children extends Human implements getProto{
+public class Children extends Human{
 
 
     public Children(String firstName, int age) {
@@ -11,11 +11,5 @@ public class Children extends Human implements getProto{
         super(firstName, secondName, age);
     }
 
-
-    @Override
-    public Children getProto() {
-        return this;
     }
 
-
-}
