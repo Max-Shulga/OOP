@@ -9,10 +9,9 @@ public class Author {
         this.surname = surname;
     }
 
+    // Overrides the default toString() method to return a string representation of the Author object.
     @Override
     public String toString() {
-        return "Author: " +
-                "Name: " + name  +
-                ", Surname: " + surname;
+        return "Author: " + "Name: " + name + ", Surname: " + surname;
     }
 }

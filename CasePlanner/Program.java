@@ -2,7 +2,7 @@ package CasePlanner;
 
 public class Program<T extends Case> {
 
-    public void start() {
+    public  void start() {
         Input input = new Input();
         Menu menu = new Menu();
         menu.getWelcome();
