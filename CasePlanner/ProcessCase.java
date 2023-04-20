@@ -57,6 +57,7 @@ public class ProcessCase extends Case {
     public void setTitle(String title) {
         this.title = title;
     }
+
     /**
      * Setter for the description field.
      *
